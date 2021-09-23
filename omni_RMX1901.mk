@@ -19,14 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit from our OmniROM configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
-
-# Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/realme/RMX1901/device.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1901
-PRODUCT_NAME := twrp_RMX1901
+PRODUCT_NAME := omni_RMX1901
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme X
 PRODUCT_MANUFACTURER := Realme
